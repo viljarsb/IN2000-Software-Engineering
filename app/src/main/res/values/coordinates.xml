@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locations">
+        <item>Bekkelagsbadet|59.880|10.765</item>
+        <item>Bestemorstranda|59.827|10.759</item>
+        <item>Bygdøy Sjøbad|59.910|10.666</item>
+        <item>Fiskevollbukta|59.842|10.773</item>
+        <item>Gressholmen|59.884|10.719</item>
+        <item>Hovedøya|59.893|10.726</item>
+        <item>Huk|59.895|10.676</item>
+        <item>Hvervenbukta|59.833|10.768</item>
+        <item>Håøya|59.720|10.561</item>
+        <item>Ingierstrand|59.818|10.749</item>
+        <item>Katten|59.855|10.783</item>
+        <item>Langøyene|59.870|10.718</item>
+        <item>Nordstrand bad|59.869|10.781</item>
+        <item>Paradisbukta|59.901|10.665</item>
+        <item>Rambergøya|59.879|10.716</item>
+        <item>Skinnerbukta|59.866|10.753</item>
+        <item>Sollerudstranda|59.910|10.650</item>
+        <item>Solvikbukta på Malmøya|59.864|10.749</item>
+        <item>Sørenga sjøbad|59.864|10.749</item>
+        <item>Tjuvholmen|59.906|10.721</item>
+        <item>Ulvøya|59.867|10.770</item>
+    </string-array>
+</resources>

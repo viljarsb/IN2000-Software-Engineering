@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:background="@color/darkerlightblue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/changeChart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="12dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cond1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/ConditionHeader"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:contentDescription="@string/change_chart_button_chart"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barGraph"
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/lineGraph"
+            app:layout_constraintEnd_toEndOf="@+id/lineGraph"
+            app:layout_constraintStart_toStartOf="@+id/lineGraph"
+            app:layout_constraintTop_toTopOf="@+id/lineGraph">
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineGraph"
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:id="@+id/ConditionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weahter_condition_chart"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/barGraph"
+            app:layout_constraintStart_toStartOf="@+id/barGraph"
+            app:layout_constraintTop_toBottomOf="@+id/lineGraph" />
+
+        <TextView
+            android:id="@+id/cond1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/x_nx_nx_n_chart"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ConditionHeader"
+            app:layout_constraintStart_toStartOf="@+id/ConditionHeader"
+            app:layout_constraintTop_toBottomOf="@+id/ConditionHeader"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.441"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+            tools:ignore="PrivateResource"
+            android:contentDescription="@string/right_arrow_graph"/>
+            <!-- I don't know if I should do this-->
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="312dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.441"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:contentDescription="@string/left_arrow_graph"
+            tools:ignore="PrivateResource" />
+        <!-- I don't know if I should do this-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="uvIndexes">
+        <item>\nIngen beskyttelse er nødvendig.</item>
+        <item>\nBeskyttelse kan være nødvendig. Klær, solbriller og hodeplagg gir god beskyttelse.</item>
+        <item>\nBeskyttelse er nødvendig. Ta pauser fra solen i timene midt på dagen. Bruk hodeplagg, solbriller og solkrem med høy faktor.</item>
+        <item>\nEkstrem beskyttelse nødvendig. Unngå solen i timene midt på dagen og søk skygge. Bruk klær, hodeplagg og solbriller og smør deg ofte med svært høy faktor.</item>
+        <item>\nEkstrem beskyttelse er absolutt nødvendig. Unngå solen og søk skygge og bruk sunblock. Grenseverdi for solarium.</item>
+    </string-array>
+</resources>

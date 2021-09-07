@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BaufortScale">
+        <item>vindstille</item>
+        <item>flau vind</item>
+        <item>svak vind</item>
+        <item>lett bris</item>
+        <item>laber bris</item>
+        <item>frisk bris</item>
+        <item>liten kuling</item>
+        <item>stiv kuling</item>
+        <item>sterk kuling</item>
+        <item>liten storm</item>
+        <item>full storm</item>
+        <item>sterk storm</item>
+        <item>orkan</item>
+    </string-array>
+</resources>

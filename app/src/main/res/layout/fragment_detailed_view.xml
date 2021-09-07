@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerlightblue"
+    android:fillViewport="true"
+    tools:context=".ui.detailedInfoUI.fragments.DetailedInfoFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/BeachName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/name_detailed"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/GraphRec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Swimming"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/symbol"
+                android:layout_width="93dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/app_icon_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.902"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/weather_vector_detailed"/>
+
+            <TextView
+                android:id="@+id/Temperature"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/airTemp_detailed"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.151"
+                app:layout_constraintStart_toStartOf="@+id/BeachName"
+                app:layout_constraintTop_toBottomOf="@+id/BeachName" />
+
+            <TextView
+                android:id="@+id/OceanTemp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/watertemp_detailed"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/Temperature"
+                app:layout_constraintTop_toBottomOf="@+id/Temperature" />
+
+            <TextView
+                android:id="@+id/Rain"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/rain_detailed"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/OceanTemp"
+                app:layout_constraintTop_toBottomOf="@+id/OceanTemp" />
+
+            <TextView
+                android:id="@+id/Uv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/uv_detailed"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/Wind"
+                app:layout_constraintTop_toBottomOf="@+id/Wind" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/air_temperature_symbol_detailed"
+                android:src="@drawable/thermometer_1f321"
+                app:layout_constraintBottom_toBottomOf="@+id/Temperature"
+                app:layout_constraintEnd_toStartOf="@+id/Temperature"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Temperature"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/water_temperature_symbol_detailed"
+                android:src="@drawable/droplet_1f4a7"
+                app:layout_constraintBottom_toBottomOf="@+id/OceanTemp"
+                app:layout_constraintEnd_toStartOf="@+id/OceanTemp"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/OceanTemp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/rain_symbol_detailed"
+                android:src="@drawable/rain_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/Rain"
+                app:layout_constraintEnd_toStartOf="@+id/Rain"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Rain"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/uv_symbol_detailed"
+                android:src="@drawable/radiation"
+                app:layout_constraintBottom_toBottomOf="@+id/Uv"
+                app:layout_constraintEnd_toStartOf="@+id/Uv"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Uv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/wind_sock_symbol_detailed"
+                android:src="@drawable/windsock"
+                app:layout_constraintBottom_toBottomOf="@+id/Wind"
+                app:layout_constraintEnd_toStartOf="@+id/Wind"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Wind"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Wind"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/air_sock_detailed"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="@+id/Rain"
+                app:layout_constraintTop_toBottomOf="@+id/Rain" />
+
+            <TextView
+                android:id="@+id/Cloud"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/cloud_detailed"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/Uv"
+                app:layout_constraintTop_toBottomOf="@+id/Uv" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/cloud_symbol_detailed"
+                android:src="@drawable/cloud"
+                app:layout_constraintBottom_toBottomOf="@+id/Cloud"
+                app:layout_constraintEnd_toStartOf="@+id/Cloud"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Cloud"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/swimming_symbol_detailed"
+                android:src="@drawable/pool"
+                app:layout_constraintBottom_toBottomOf="@+id/Swimming"
+                app:layout_constraintEnd_toStartOf="@+id/Swimming"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Swimming"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Swimming"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/swimming_detailed"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/Cloud"
+                app:layout_constraintTop_toBottomOf="@+id/Cloud" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

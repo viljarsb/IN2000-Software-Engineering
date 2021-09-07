@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerlightblue"
+    tools:context=".ui.detailedInfoUI.fragments.GeneralInfoFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+        <!--I don't know if we should ignore-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/BeachName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/beach_name_general"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.084"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/WaterQuality"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/water_quality_general"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/osloKomAttr"
+                    app:layout_constraintEnd_toEndOf="@+id/WaterQualityHeader"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/WaterQualityHeader"
+                    app:layout_constraintTop_toBottomOf="@+id/WaterQualityHeader"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/WaterQualityHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:textStyle="bold"
+                    android:text="@string/badevannskvalitet_general"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/TransportDesc"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/TransportDesc"
+                    app:layout_constraintTop_toBottomOf="@+id/TransportDesc" />
+
+                <TextView
+                    android:id="@+id/FacilitiyList"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:width="350dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/facility_list_general"
+                    android:textSize="13sp"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/FacilitiesHeader"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/FacilitiesHeader"
+                    app:layout_constraintTop_toBottomOf="@+id/FacilitiesHeader" />
+
+                <TextView
+                    android:id="@+id/TransportHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/transport_general"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/FacilitiyList"
+                    app:layout_constraintHorizontal_bias="0.012"
+                    app:layout_constraintStart_toStartOf="@+id/FacilitiyList"
+                    app:layout_constraintTop_toBottomOf="@+id/FacilitiyList" />
+
+                <TextView
+                    android:id="@+id/osloKomAttr"
+                    android:layout_width="280dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/kilde_general"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/FacilitiesHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/fasiliteter_general"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/BeachDesc"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/BeachDesc"
+                    app:layout_constraintTop_toBottomOf="@+id/BeachDesc" />
+
+                <TextView
+                    android:id="@+id/BeachDesc"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beach_desc_general"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/BeachDescHeader"
+                    app:layout_constraintHorizontal_bias="0.017"
+                    app:layout_constraintStart_toStartOf="@+id/BeachDescHeader"
+                    app:layout_constraintTop_toBottomOf="@+id/BeachDescHeader" />
+
+                <TextView
+                    android:id="@+id/TransportDesc"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport_desc_general"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/TransportHeader"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/TransportHeader"
+                    app:layout_constraintTop_toBottomOf="@+id/TransportHeader" />
+
+                <TextView
+                    android:id="@+id/BeachDescHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="@string/beachDescHeader_general"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/BeachName"
+                    app:layout_constraintHorizontal_bias="0.076"
+                    app:layout_constraintStart_toStartOf="@+id/BeachName"
+                    app:layout_constraintTop_toBottomOf="@+id/BeachName" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <!--
+    Package name:
+    com.example.team39_prosjekt
+
+    SHA-1 certificate fingerprint:
+    Go to:
+    Gradle -> "Project name" -> Tasks -> Android -> signingreport
+
+    Below is API-key, (starting with AIza...), must be refreshed every 30 days.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBpiEcegtnMvHQTSPg2eoXBw98469HTGrE</string>
+</resources>
